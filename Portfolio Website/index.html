@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-p"></i>
+                    <div class="logo-text">Pranoti Sarjoshi</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span> 
+                        <span></span>
+
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="a">Home</a></li>
+                        <li><a href="a">Portfolio</a></li>
+                        <li><a href="a">Resume</a></li>
+                        <li><a href="a">Contact</a></li>
+                        <li><a href="a">Blog</a></li>
+                    </ul>
+                    
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/1688793667880.jpg" alt="profile pic" >
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input"> Cyber Security Enthusiast</span></h5>
+                    <h1>Pranoti Sarjoshi</h1>
+                    <p>An Engineering fresher with specialization in Cyber Security, Front End Web Development & Java.
+                        A strong history of building and leading world class engineering Organizations to deliver scalabel technology solutions and improve bussiness operations for enterprise customers.  
+                     </p>
+                     <div class="btn-grp">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                     </div>
+                     <div class="social">
+                        <a href="#" target="_blank" class="icon-facebook">
+                            <i class="fab fa-facebook-f">
+                              </i>
+                          </a>
+                          <a href="#" target="_blank" class="icon-twitter">
+                            <i class="fab fa-twitter">
+                              </i>
+                          </a>
+                          <a href="#" target="_blank" class="icon-google_plus">
+                            <i class="fab fa-google-plus-g">
+                              </i>
+                          </a>
+                          
+                          <a href="#" target="_blank" class="icon-linkedin">
+                            <i class="fab fa-linkedin-in">
+                              </i>
+                          </a>
+                          <a href="#" target="_blank" class="icon-instagram">
+                            <i class="fab fa-instagram">
+                              </i>
+                          </a>
+                          
+                        
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+    <script>
+        /** Creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:[ "Pen Tester","Frontend Developer", "Learner","Cyber Security Enthusiast"],
+            typeSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+
+        
+    </script>
+    
+</body>
+</html>
